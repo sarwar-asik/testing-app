@@ -1,0 +1,14 @@
+{
+  "name": "unit_testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sarwar-asik/unit-testing.git",
+  "author": "sarwar-asik <sarwarasik@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.6"
+  }
+}

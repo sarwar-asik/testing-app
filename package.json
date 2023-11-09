@@ -6,7 +6,7 @@
   "author": "sarwar-asik <sarwarasik@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest --reporter verbose "
   },
   "devDependencies": {
     "vitest": "^0.34.6"

@@ -1,3 +1,4 @@
-export const transformToNum =(str)=>{
-return Number(str)
+export const transformToNum =(value)=>{
+return +value
+// return NaN
 }

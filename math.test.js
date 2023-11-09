@@ -42,3 +42,12 @@ it("sum of the name at array of numeric string", () => {
   /// Assertion
   expect(result).toBe(expectedResult);
 });
+
+it("when no argument", () => {
+  const resultFun = () => {
+    add();
+  };
+  expect(resultFun).toThrow();
+});
+
+

@@ -50,4 +50,16 @@ it("when no argument", () => {
   expect(resultFun).toThrow();
 });
 
+it("the math is for multiple arg", () => {
+  const resultFun = () => {
+    add(1, 2, 3);
+  };
+  expect(resultFun).toThrow();
+});
 
+it("the math is for multiple arg", () => {
+  const resultFun = () => {
+    add(1, 2, 3);
+  };
+  expect(resultFun).toThrow(/is not iterable/i);
+});

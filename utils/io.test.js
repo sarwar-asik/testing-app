@@ -4,13 +4,15 @@ import { promises as fs } from "fs";
 
 vi.mock("fs");
 
-vi.mock("path", () => {
-  return {
-    default: {
-      join: (...args) => args[args.length - 1],
-    },
-  };
-});
+// vi.mock("path", () => {
+//   return {
+//     default: {
+//       join: (...args) => args[args.length - 1],
+//     },
+//   };
+// });
+
+vi.mock("path");
 
 it("store token to the file", () => {
   const data = "my token";

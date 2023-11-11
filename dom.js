@@ -1,4 +1,4 @@
-export function renderTitle() {
+ export function renderTitle() {
   const titleContainer =
     document.getElementById("title") || document.createElement("div");
   const titleElement = document.createElement("p");
@@ -6,6 +6,6 @@ export function renderTitle() {
   titleContainer.append(titleElement);
 }
 
-// renderTitle();
+renderTitle();
 
 

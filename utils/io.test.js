@@ -7,7 +7,7 @@ vi.mock("fs");
 vi.mock("path", () => {
   return {
     default: {
-      join: (...args) => args(args.length - 1),
+      join: (...args) => args[args.length - 1],
     },
   };
 });

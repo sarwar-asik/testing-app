@@ -11,5 +11,5 @@ export function cleanNumbers(values) {
     const number = transformToNum(value);
     numbers.push(number);
   }
-  return  numbers
-}
+    return  numbers
+  }

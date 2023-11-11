@@ -1,7 +1,17 @@
 ### Testing with react vite app
 
+#### create a react app
+
+```bash
+npm create vite@latest
+```
+
+### Install the package :::
+
 ```bash
 yarn add vitest jsdom @testing-library/jest-dom -D
+npm i @testing-library/react
+npm i --save-dev @types/mocha
 ```
 
 ##### create a file src>setupTest.ts :::
@@ -56,4 +66,3 @@ export default defineConfig({
   "references": [{ "path": "./tsconfig.node.json" }],
   "types":["vitest/globals"]
 ```
-

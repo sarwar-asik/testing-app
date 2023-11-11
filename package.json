@@ -1,5 +1,28 @@
 {
+  "name": "dom-testing",
+  "version": "1.0.0",
+  "main": "dom.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest --reporter verbose --environment jsdom"
+  },
   "dependencies": {
+    "http-server": "^14.1.1",
     "vitest": "^0.34.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarwar-asik/unit-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarwar-asik/unit-testing/issues"
+  },
+  "homepage": "https://github.com/sarwar-asik/unit-testing#readme",
+  "description": "",
+  "devDependencies": {
+    "jsdom": "^22.1.0"
   }
 }

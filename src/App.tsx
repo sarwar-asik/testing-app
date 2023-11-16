@@ -5,7 +5,7 @@ import { fruits } from "./const/fruits";
 function App() {
   return (
     <div className="">
-      Hello World
+     <h2>Our Fruits List  </h2>
       <FruitsList fruits={fruits} />
     </div>
   );

@@ -1,5 +1,10 @@
 import './App.css';
 import FormComponent from './components/Form/Form';
+import FruitList from './components/FruitList/FruitList';
+import PrimaryButton from './components/PrimaryButton';
+import UserEvent from './components/UserEvent/UserEvent';
+import Users from './components/Users/User';
+import UserTable from './components/UsersTable/UsersTable';
 // import FormComponent from './components/Form/Form';
 // import FruitList from './components/FruitList/FruitList';
 // import PrimaryButton from './components/PrimaryButton';
@@ -7,7 +12,7 @@ import FormComponent from './components/Form/Form';
 // import UserTable from './components/UsersTable/UsersTable';
 // import UserEvent from './components/UserEvent/UserEvent';
 
-// const fruits = ['apple', 'banana', 'orange', 'mango', 'pineapple'];
+const fruits = ['apple', 'banana', 'orange', 'mango', 'pineapple'];
 export const users = [
    { id: 1, name: 'John', age: 32 },
    { id: 2, name: 'Jane', age: 25 },
@@ -18,12 +23,12 @@ function App() {
    return (
       <div>
          <h1>Hello World</h1>
-         {/* <PrimaryButton /> */}
+         <PrimaryButton />
          {/* <PrimaryButton actionType='Delete' /> */}
-         {/* <Users /> */}
-         {/* <FruitList fruits={fruits} /> */}
-         {/* <UserTable  users={users} /> */}
-         {/* <UserEvent /> */}
+         <Users />
+         <FruitList fruits={fruits} />
+         <UserTable  users={users} />
+         <UserEvent />
          <FormComponent
             onSubmit={(data) => {
                console.log(data);

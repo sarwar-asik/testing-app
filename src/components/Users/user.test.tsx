@@ -32,4 +32,4 @@ it('should render the component', () => {
     expect(element).toBeInTheDocument()
     expect(headingELement).toBeInTheDocument()
 
-})
+}) 

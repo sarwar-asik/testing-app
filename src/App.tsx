@@ -13,11 +13,12 @@ import UserTable from './components/UsersTable/UsersTable';
 // import UserEvent from './components/UserEvent/UserEvent';
 
 const fruits = ['apple', 'banana', 'orange', 'mango', 'pineapple'];
-export const users = [
-   { id: 1, name: 'John', age: 32 },
-   { id: 2, name: 'Jane', age: 25 },
-   { id: 3, name: 'Bob', age: 43 },
-];
+
+// export const users = [
+//    { id: 1, name: 'John', age: 32 },
+//    { id: 2, name: 'Jane', age: 25 },
+//    { id: 3, name: 'Bob', age: 43 },
+// ];
 
 function App() {
    return (
@@ -27,7 +28,7 @@ function App() {
          {/* <PrimaryButton actionType='Delete' /> */}
          <Users />
          <FruitList fruits={fruits} />
-         <UserTable  users={users} />
+         {/* <UserTable  users={users} /> */}
          <UserEvent />
          <FormComponent
             onSubmit={(data) => {

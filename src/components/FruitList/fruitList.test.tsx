@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+ import { render, screen } from "@testing-library/react";
 import FruitList from "./FruitList";
 
 const fruits = ['apple', 'banana', 'orange', 'mango', 'pineapple'];

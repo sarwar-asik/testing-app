@@ -5,6 +5,7 @@ import PrimaryButton from './components/PrimaryButton';
 import UserEvent from './components/UserEvent/UserEvent';
 import Users from './components/Users/User';
 import UserTable from './components/UsersTable/UsersTable';
+import { fruits } from './const/fruits';
 // import FormComponent from './components/Form/Form';
 // import FruitList from './components/FruitList/FruitList';
 // import PrimaryButton from './components/PrimaryButton';
@@ -12,7 +13,7 @@ import UserTable from './components/UsersTable/UsersTable';
 // import UserTable from './components/UsersTable/UsersTable';
 // import UserEvent from './components/UserEvent/UserEvent';
 
-const fruits = ['apple', 'banana', 'orange', 'mango', 'pineapple'];
+
 
 // export const users = [
 //    { id: 1, name: 'John', age: 32 },

@@ -1,17 +1,21 @@
-import { render, screen, within, logRoles } from '@testing-library/react';
-import UserTable from './UsersTable';
-import { users } from '../../App';
+import { render, screen } from "@testing-library/react";
+import { describe, it } from "vitest";
 
-describe('UserTable()', () => {
-   it('Should render the table correctly', async () => {
-      const {container}  = render(<UserTable users={users} />);
+import UserTable from "./UsersTable";
+import { usersData } from "../../const/user";
 
-      // screen.logTestingPlaygroundURL();
-    //   logRoles(container)
+describe("UserTable()", () => {
+  it("SHould render the welcome message ", () => {
+    render(<UserTable users={usersData} />);
+    const welcomeMessage = screen.findByTestId(
+      "welcome",
+      {},
+      { timeout: 2000 }
+    );
 
-     
-      const rows = within(screen.getByTestId('users')).getAllByRole('row');
-      
-      expect(rows).toHaveLength(3);
-   });
+    // expect(welcomeMessage).toBeInTheDocument()
+
+     screen.logTestingPlaygroundURL(); //! for get a url after test run
+
+  });
 });

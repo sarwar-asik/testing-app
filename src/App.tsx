@@ -28,14 +28,17 @@ function App() {
          <PrimaryButton />
          {/* <PrimaryButton actionType='Delete' /> */}
          <Users />
-         <FruitList fruits={fruits} />
+         
+         {/* <FruitList fruits={fruits} /> */}
          {/* <UserTable  users={users} /> */}
          <UserEvent />
-         <FormComponent
+         {/* <FormComponent
             onSubmit={(data) => {
                console.log(data);
             }}
-         />
+         /> */}
+
+         
       </div>
    );
 }

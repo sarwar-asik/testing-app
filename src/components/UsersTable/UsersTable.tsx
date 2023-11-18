@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
+import { User } from '../../interface/userInterface';
 
-interface User {
-   id: number;
-   name: string;
-   age: number;
-}
+// interface User {
+//    id: number;
+//    name: string;
+//    age: number;
+// }
 
 interface Props {
    users: User[];

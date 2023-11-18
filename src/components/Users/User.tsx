@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./user.css";
-import UserTable from "../UsersTable/UsersTable";
+
 import { User } from "../../interface/userInterface";
+import UserTable from "../UsersTable/UsersTable";
 
 // interface User {
 //    name: string;

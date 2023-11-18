@@ -1,11 +1,11 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
 import UserTable from "./UsersTable";
 import { usersData } from "../../const/user";
 
 describe("UserTable()", () => {
-  it("SHould render the welcome message ", () => {
+  it("SHould render table correctly . ", () => {
     render(<UserTable users={usersData} />);
     const welcomeMessage = screen.findByTestId(
       "welcome",
@@ -13,9 +13,15 @@ describe("UserTable()", () => {
       { timeout: 2000 }
     );
 
-    // expect(welcomeMessage).toBeInTheDocument()
+   //  expect(welcomeMessage).toBeInTheDocument()
 
-     screen.logTestingPlaygroundURL(); //! for get a url after test run
+    //   screen.logTestingPlaygroundURL(); //! for get a url after test run
+   //  screen.debug();
+    const rows = within(screen.getByTestId("users")).getAllByRole("row");
+    
 
+
+   //  screen.debug();
+    expect(rows).toHaveLength(3);
   });
 });
